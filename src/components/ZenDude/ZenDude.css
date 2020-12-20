@@ -1,0 +1,95 @@
+.zen-container {
+  position: relative;
+  height: 150vw;
+}
+.zen-container img.zen-dude, .zen-container svg.zen-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.zen-container img.zen-dude {
+  width: 90%;
+  object-fit: contain;
+  object-position: center;
+  animation: levitate 5s linear infinite;
+}
+.zen-container svg.zen-shadow {
+  animation: shadow 5s linear infinite;
+}
+
+@keyframes levitate {
+  0%, 100% {
+    bottom: 10%;
+  }
+  25%, 75% {
+    bottom: 14%;
+  }
+  50% {
+    bottom: 18%;
+  }
+}
+@keyframes shadow {
+  0%, 100% {
+    width: 50%;
+  }
+  25%, 75% {
+    width: 40%;
+  }
+  50% {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 300px) {
+  .zen-container {
+    height: 120vw;
+  }
+  .zen-container .zen-dude {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .zen-container {
+    height: 110vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .zen-container {
+    height: 550px;
+  }
+  .zen-container .zen-dude {
+    height: 300px;
+  }
+  @keyframes shadow {
+    0%, 100% {
+      width: 300px;
+    }
+    25%, 75% {
+      width: 250px;
+    }
+    50% {
+      width: 200px;
+    }
+  }
+}
+@media only screen and (max-height: 650px) {
+  .zen-container {
+    height: 400px;
+  }
+  .zen-container .zen-dude {
+    height: 250px;
+  }
+  @keyframes shadow {
+    0%, 100% {
+      width: 250px;
+    }
+    25%, 75% {
+      width: 200px;
+    }
+    50% {
+      width: 150px;
+    }
+  }
+}
+
+/*# sourceMappingURL=ZenDude.css.map */
