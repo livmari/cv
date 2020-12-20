@@ -1,0 +1,48 @@
+.app-footer_btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button.app-footer_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+button.app-footer_btn svg.app-footer_btn-icon {
+  animation: bouncy 3s linear infinite;
+  transition: 1s;
+}
+
+button.app-footer_btn:hover svg.app-footer_btn-icon {
+  animation: bouncy 0.5s linear infinite;
+}
+
+button.app-footer_btn:focus {
+  outline: none;
+}
+
+@keyframes bouncy {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .app-footer_btn-container {
+    justify-content: flex-start;
+  }
+
+  .app-footer_info {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=AppFooter.css.map */
