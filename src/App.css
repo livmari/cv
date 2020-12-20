@@ -1,1 +1,17 @@
-.app {}
+.app {
+  -webkit-animation: fade-in 2s linear 1;
+  -moz-animation: fade-in 2s linear 1;
+  -o-animation: fade-in 2s linear 1;
+  animation: fade-in 2s linear 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

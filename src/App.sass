@@ -1,0 +1,13 @@
+$animation-rules: fade-in 2s linear 1
+
+.app
+  -webkit-animation: $animation-rules
+  -moz-animation: $animation-rules
+  -o-animation: $animation-rules
+  animation: $animation-rules
+
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
