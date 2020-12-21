@@ -2,7 +2,8 @@
   position: relative;
   height: 150vw;
 }
-.zen-container img.zen-dude, .zen-container svg.zen-shadow {
+.zen-container img.zen-dude,
+.zen-container svg.zen-shadow {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -19,10 +20,12 @@
 }
 
 @keyframes levitate {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 10%;
   }
-  25%, 75% {
+  25%,
+  75% {
     bottom: 14%;
   }
   50% {
@@ -30,10 +33,12 @@
   }
 }
 @keyframes shadow {
-  0%, 100% {
+  0%,
+  100% {
     width: 50%;
   }
-  25%, 75% {
+  25%,
+  75% {
     width: 40%;
   }
   50% {
@@ -61,10 +66,12 @@
     height: 300px;
   }
   @keyframes shadow {
-    0%, 100% {
+    0%,
+    100% {
       width: 300px;
     }
-    25%, 75% {
+    25%,
+    75% {
       width: 250px;
     }
     50% {
@@ -80,10 +87,12 @@
     height: 250px;
   }
   @keyframes shadow {
-    0%, 100% {
+    0%,
+    100% {
       width: 250px;
     }
-    25%, 75% {
+    25%,
+    75% {
       width: 200px;
     }
     50% {
