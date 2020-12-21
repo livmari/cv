@@ -26,7 +26,8 @@ button.app-footer_btn:focus {
 }
 
 @keyframes bouncy {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(-5deg);
   }
   50% {
