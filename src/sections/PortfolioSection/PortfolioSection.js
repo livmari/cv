@@ -1,5 +1,9 @@
 import React from 'react'
-import { Title } from '../../components/TextContent/TextContent'
+import {
+  Paragraph,
+  Subtitle,
+  Title,
+} from '../../components/TextContent/TextContent'
 
 const PortfolioSection = props => {
   return (
@@ -10,6 +14,12 @@ const PortfolioSection = props => {
       }
     >
       <Title text={'Portfolio'} />
+      <Subtitle text={'Web'} />
+      <Paragraph text={'Coming soon'} />
+      <Subtitle text={'Android'} />
+      <Paragraph text={'Coming soon'} />
+      <Subtitle text={'Desktop'} />
+      <Paragraph text={'Coming soon'} />
     </div>
   )
 }
