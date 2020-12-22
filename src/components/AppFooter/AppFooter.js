@@ -4,6 +4,12 @@ import { Link } from '../TextContent/TextContent'
 
 import './AppFooter.css'
 
+function handleClick() {
+  alert(
+    'This website is a work in progress.\nPlease check back in later 🤓\n\nLast updated: 2020-12-22'
+  )
+}
+
 // TODO: Handle click in renderPageLinks
 const PageLinks = () => {
   const classes =
@@ -16,20 +22,13 @@ const PageLinks = () => {
       }
     >
       <button
-        onClick={alert(
-          'This website is a work in progress.\nPlease check back in later 🤓\n\nLast updated: 2020-12-22'
-        )}
+        onClick={handleClick}
         className={'mr-10 sm:mr-16' + classes}
       >
         <Envelope classes={'app-footer_btn-icon mb-2'} />
         Contact me
       </button>
-      <button
-        onClick={alert(
-          'This website is a work in progress.\nPlease check back in later 🤓\n\nLast updated: 2020-12-22'
-        )}
-        className={classes}
-      >
+      <button onClick={handleClick} className={classes}>
         <Question classes={'app-footer_btn-icon mb-2'} />
         FAQ
       </button>
