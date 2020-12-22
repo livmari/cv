@@ -16,13 +16,20 @@ const PageLinks = () => {
       }
     >
       <button
-        onClick={() => {}}
+        onClick={alert(
+          'This website is a work in progress.\nPlease check back in later 🤓\n\nLast updated: 2020-12-22'
+        )}
         className={'mr-10 sm:mr-16' + classes}
       >
         <Envelope classes={'app-footer_btn-icon mb-2'} />
         Contact me
       </button>
-      <button onClick={() => {}} className={classes}>
+      <button
+        onClick={alert(
+          'This website is a work in progress.\nPlease check back in later 🤓\n\nLast updated: 2020-12-22'
+        )}
+        className={classes}
+      >
         <Question classes={'app-footer_btn-icon mb-2'} />
         FAQ
       </button>
