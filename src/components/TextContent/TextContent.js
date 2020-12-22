@@ -20,7 +20,8 @@ export const Subtitle = props => {
   return (
     <h2
       className={
-        'text-5xl font-extralight mb-9' + utilityClasses
+        'text-app-dark-grey text-4xl font-extralight mb-9' +
+        utilityClasses
       }
     >
       {props.text}
